@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Lesson 12: SiteLayout </title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Normilize -->
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+		
+        	<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+		<link = rel="stylesheet" type="text/css" href="./styles/lesson12.css">
+	</head>
+	<body>
+
+<!--#######################--Урок 10 /Gorgany/--#######################-->
+		<div class = "grMain">
+			<div class = "Header">
+				<div class = "flHeaderContent">
+					<div class = "flHeaderContentShop">
+						<nav class = "NavMenu">
+							<ul class = "UlNavMenu">
+								<li> <a href = "#" style = "text-decoration: underline red"> Gorgany </a> </li>
+								<li> <a class = "NavMenuStyle" href = "#"> Вело </a> </li>
+								<li> <a class = "NavMenuStyle" href = "#"> Outlet </a> </li>
+								<li> <a class = "NavMenuStyle" href = "#"> Прокат </a> </li>
+								<li> <a href = "#"> <strong> Магазин </strong> <i class = "fa fa-angle-down"> </i> </a>
+                           						<ul class = "UlNavSubmenu">
+										<li> <a href = "#"> Київ, Антоновича, 14 </a> </li>
+										<li> <a href = "#"> Київ, Мишуги, 11-Б </a> </li>
+										<li> <a href = "#"> Львів, В.Великого, 1 </a> </li>
+										<li> <a href = "#"> Львів, Гнатюка, 13 </a> </li>
+										<li> <a href = "#"> Одеса, Розумовська, 31 </a> </li>
+										<li> <a href = "#"> Франківськ, М.Мулика, 35 </a> </li>
+										<li> <a href = "#"> Тернопіль, Б.Хмельницького, 12 </a> </li>
+										<li> <a href = "#"> Чернівці, Небесної сотні, 23 </a> </li>
+										<li> <a href = "#"> Рівне, Кн. Ольги, 4 </a> </li>
+										<li> <a href = "#"> Житомир, Театральна, 9 </a> </li>
+										<li> <a href = "#"> Вінниця, Келецька, 78-В </a> </li>
+										<li> <a href = "#"> Буковель </a> </li>
+                            						</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<div class = "flHeaderContentInfo">
+						<nav class = "NavMenu">
+							<ul class = "UlNavMenu">			
+								<li> <a class = "NavMenuStyle" href = "#"> Вакансії </a> </li>
+								<li> <a class = "NavMenuStyle" href = "#"> Програма лояльності </a> </li>
+								<li> <a href = "#"> <strong> Як замовити </strong> <i class = "fa fa-angle-down"> </i> </a>
+									<ul class = "UlNavSubmenu">
+										<li> <a href = "#"> Оплата </a> </li>
+										<li> <a href = "#"> Доставка </a> </li>
+										<li> <a href = "#"> Гарантия </a> </li>
+										<li> <a href = "#"> Поширені запитання </a> </li>
+										<li> <a href = "#"> Повернення </a> </li>
+										<li> <a href = "#"> Програма лояльності </a> </li>
+										<li> <a href = "#"> Підібрати розмір </a> </li>
+										<li> <a href = "#"> Угода Користувача </a> </li>
+									</ul>
+								</li>
+								<li> <a class = "NavMenuStyle" href = "#"> Журнал PRO </a> </li>
+								<li> <a class = "NavMenuStyle" href = "#"> Контакти </a> </li>
+								<li> <a href = "#"> <strong> UA </strong> <i class = "fa fa-angle-down"> </i> </a>
+									<ul class = "UlNavSubmenu" id = "subua">
+										<li> <a href = "#"> UA </a> </li>
+										<li> <a href = "#"> EN </a> </li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class = "flHeaderInfoSearch">
+					<a href = "#">
+                        			<img src = "./styles/logo.svg" width = "216" height = "52">
+                    			</a>
+					<div class = "ContentSearch">
+						<input type = "text" class = "searchTerm" placeholder = "Пошук спорядження та одягу">
+						<button type = "submit" class = "searchButton">
+							<i class = "fa fa-search"></i>
+						</button>
+					</div>
+					<nav class = "NavMenu">
+						<ul class = "UlNavMenu">
+							<li> <a href = "#"> <strong> (067) 353 37 27 </strong> <i class = 'fa fa-angle-down'> </i> </a>
+								<ul class = "UlNavSubmenu">
+									<li> <a href = '#'> (067) 353 37 27 </a> </li>
+									<li> <a href = '#'> (099) 060 51 81 </a> </li>
+									<li> <a href = '#'> (093) 631 92 50 </a> </li>
+							</li>
+						</ul>
+					</nav>
+					<a href = "#"> <img src = "./styles/circle-user-regular.svg" width = "24" height = "24"> </a>
+					<a href = "#"> <img src = "./styles/heart-regular.svg" width = "24" height = "24"> </a>
+					<a href = "#"> <img src = "./styles/scale-balanced-solid.svg" width = "24" height = "24"> </a>
+					<a href = "#"> <img src = "./styles/cart-shopping-solid.svg" width = "24" height = "24"> </a>
+				</div>
+				<div class = "flHeaderCategory">
+					<a href = "#"> ОДЯГ </a>
+					<a href = "#"> СПОРЯДЖЕННЯ </a>
+					<a href = "#"> ВЗУТТЯ </a>
+					<a href = "#" style = "color: #c5222a" > TURBAT NEW </a>
+					<a href = "#"> ВЕЛО </a>
+					<a href = "#"> ВІЙСЬКОВИМ </a>
+					<a href = "#"> ДЛЯ ПЕРЕМОГИ </a>
+					<a href = "#"> ЧЕКЛІСТИ </a>
+					<a href = "#"> КОРПОРАТИВНІ ПРОДАЖІ </a>
+					<a href = "#"> ПРОКАТ </a>
+				</div>
+				<div class = "flHeaderInfo">
+					<a href = "#" style = "color: #c5222a"> <strong> 5% продажу з кожної речі Turbat передаємо ЗСУ </strong> </a>
+				</div>
+				<div class = "flHeaderCategoryMenu">
+					<a href = "#"> Головна <i class = "fa fa-angle-right"> </i> </a>
+					<a href = "#"> Спорядження <i class = "fa fa-angle-right"> </i> </a>
+					<a href = "#"> Посуд <i class = "fa fa-angle-right"> </i> </a>
+					<a href = "#"> Набори посуду </a>
+				</div>
+			</div>
+			<div class = "Menu">
+				<a href = "#"> <strong> Бренд </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Акція </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Категорія </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Тип </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Матеріал </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Особливості </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Вага </strong> <i class = "fa fa-angle-down"> </i> </a>
+				<a href = "#"> <strong> Розмір </strong> <i class = "fa fa-angle-down"> </i> </a>
+			</div>
+			<div class = "Base">
+				<div class = flBaseHead>
+					<div class = flBaseHeadName>
+						<span> Набори туристичного посуду </span>
+					</div>
+					<div class = flBaseHeadSort>
+					<!-- Тупо скопійював з оригиналу.
+					 ### Буде час, треба розібратись #ага :) ### !!! ### )-->
+						<div class = "toolbar-sorter sorter">
+							<label class = "sorter-label" for = "sorter"> Сортування </label>
+							<select id = "sorter" data-role = "sorter" class = "sorter-options">
+								<option value = "position" selected = "selected"> Позиція </option>
+								<option value= "name"> Назва товару </option>
+								<option value= "price" > Ціна </option>
+								<option value= "created_at" > Новинки Спочатку </option>
+								<option value= "sleepingbags_weight"> Вага </option>
+								<option value= "percent_discount"> Акційні </option>
+                            				</select>
+							<!--<a title="Сортувати у порядку зменшення" href="#" class="action sorter-action sort-asc" data-role="direction-switcher" data-value="desc">
+                                				<span>Сортувати</span>
+                            				</a> -->
+                        			</div>
+                    			</div>
+				</div>
+                    		<div class = "grBaseProduct">
+					<div class = "flBaseProductName">
+	                        		<img src = "./styles/product_01.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Fire Maple Antarcti Set </a>
+						<p class = pProduct> 2 090 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	                        		<img src = "./styles/product_02.jpg">
+						<a class = "pProduct" href = "#"> Набір каструль Primus Litech Pot Set 2,3 л </a>
+						<p class = pProduct> 3 105 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	                	        	<img src = "./styles/product_03.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Summit Tiffin Cookset сталь 1.5 л </a>
+						<p class = pProduct> 1 021 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_04.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Pinguin Quadri Х </a>
+						<p class = pProduct> 3 003 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_05.jpg">
+						<a class = "pProduct" href = "#"> Контейнер для їжі Tatonka Lunch Box II 800 </a>
+						<p class = pProduct> 1 134 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_06.jpg">
+						<a class = "pProduct" href = "#"> Контейнер для їжі Tatonka Lunch Box I 800 </a>
+						<p class = pProduct> 1 008 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_07.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Pinguin Rover S </a>
+						<p class = pProduct> 2 418 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_08.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Fire Maple Gourmet Set </a>
+						<p class = pProduct> 1 605 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_09.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Primus Meal Set Pippi Red </a>
+						<p class = pProduct> 876 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_10.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Pinguin Solo </a>
+						<p class = pProduct> 1 092 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_11.jpg">
+						<a class = "pProduct" href = "#"> Казанок Fjord Nansen Tolla Alu 500ml </a>
+						<p class = pProduct> 1 024 грн </p>
+					</div>
+					<div class = "flBaseProductName">
+	        	                	<img src = "./styles/product_12.jpg">
+						<a class = "pProduct" href = "#"> Набір посуду Pinguin Duo S 16/14 </a>
+						<p class = pProduct> 2 028 грн </p>
+					</div>
+				</div>
+				<div class = "flBaseFooter">
+					<div class = "flBaseFooterPage">
+						<a href = "#"> 1 </a>
+						<a href = "#"> 2 </a>
+						<a href = "#"> 3 </a>
+						<a href = "#"> 4 </a>
+						<a href = "#"> 5 <i class = "fa fa-angle-right"> </i> </a>
+					</div>
+					<div class = "flBaseFooterNum">
+						<a href = "#"> <strong> Позицій на сторинці - 24 </strong> <i class = "fa fa-angle-down"> </i> </a>
+					</div>
+				</div>
+                	</div>
+			<div class = "TBase">
+				<div class = "TBaseText">
+					<span style = "font-size: 2em; font-weight: 700"> Набір посуду для туризму — зроби свій похід надзвичайним </span>
+					<a href = "#" style = "color:  red"> Більше <i class = "fa fa-angle-down"> </i> </a>
+				</div>
+			</div>
+			<div class = "Footer">
+				<div class = "flFooter">
+					<div class = "FooterLink">
+                            			<div class = "FooterTitle"> Інформація </div>
+						<ul>
+							<li> <a href = "#"> Оплата </a> </li>
+							<li> <a href = "#"> Доставка </a> </li>
+							<li> <a href = "#"> Гарантія </a> </li>
+							<li> <a href = "#"> Програма лояльності </a> </li>
+							<li> <a href = "#"> Поширені запитання </a> </li>
+							<li> <a href = "#"> Повернення </a> </li>
+							<li> <a href = "#"> Угода Користувача </a> </li>
+							<li> <a href = "#"> Бренди </a> </li>
+							<li> <a href = "#"> Контакти </a> </li>
+							<li> <a href = "#"> Вакансії </a> </li>
+							<li> <a href = "#"> B2B </a> </li>
+							<li> <a href = "#"> Корпоративні продажі </a> </li>
+							<li> <a href = "#"> Прокат </a> </li>
+						</ul>
+					</div>
+					<div class = "FooterLink">
+						<div class = "FooterTitle"> Магазини </div>
+						<ul>
+							<li> <a href = "#"> Київ, Антоновича, 14 </a> </li>
+							<li> <a href = "#"> Київ, Мишуги, 11-Б </a> </li>
+							<li> <a href = "#"> Львів, В.Великого, 1 </a> </li>
+							<li> <a href = "#"> Львів, Гнатюка, 13 </a> </li>
+							<li> <a href = "#"> Івано-Франківськ, М. Мулика, 35 </a> </li>
+							<li> <a href = "#"> Тернопіль, Б.Хмельницького, 12 </a> </li>
+							<li> <a href = "#"> Чернівці, Небесної сотні, 23 </a> </li>
+							<li> <a href = "#"> Рівне, Кн.Ольги, 4 </a> </li>
+							<li> <a href = "#"> Житомир, Театральна, 9 </a> </li>
+							<li> <a href = "#"> Вінниця, Келецька, 78-В (Магігранд) </a> </li>
+							<li> <a href = "#"> Одеса, Розумовська, 31 </a> </li>
+							<li> <a href = "#"> Буковель </a> </li>
+						</ul>
+					</div>
+					<div class = "FooterLink">
+						<div class = "FooterTitle"> Проєкти </div>
+						<ul>
+							<li> <a href = "#"> Gorgany Race </a> </li>
+							<li> <a href = "#"> Gorgany Bus </a> </li>
+							<li> <a href = "#"> Gorgany Pro </a> </li>
+							<li> <a href = "#"> Gorgany Tent Expo </a> </li>
+							<li> <a href = "#"> Gorgany Сlub </a> </li>
+							<li> <a href = "#"> Gorgany Romania </a> </li>
+						</ul>
+					</div>
+					<div class = "FooterLink">
+						<div class = "FooterTitle"> Товари </div>
+						<ul>
+							<li> <a href = "#"> Намети </a> </li>
+							<li> <a href = "#"> Спальники </a> </li>
+							<li> <a href = "#"> Рюкзаки </a> </li>
+							<li> <a href = "#"> Черевики </a> </li>
+							<li> <a href = "#"> Термобілизна </a> </li>
+							<li> <a href = "#"> Міські рюкзаки </a> </li>
+						</ul>
+					</div>
+					<div class = "FooterLink">
+						<div class = "FooterTitle">
+							<strong> Долучайтесь до спільноти мандрівників </strong>
+						</div>
+						<ul>
+							<li> <a href = "#"> Новини, акції, ідеї для подорожей </a> </li>
+							<div class = "flFooterLinkMail">
+								<input type = "email" class = "InputFields" placeholder = "E-Mail">
+								<button type = "submit" class = "InputButton">
+									<i class = "fa fa-arrow-right"></i>
+								</button>
+							</div>
+						</ul>
+						<div class = "flFooterLinkSocial">
+							<ul>
+								<li> <a href="#" class = "icon-facebook"> <span class = "fa fa-facebook-official" style = "font-size: 36px; color: #c5222a"> </span> </a> </li>
+								<li> <a href="#" class = "icon-instagram"> <span class="fa fa-instagram" style = "font-size: 36px; color: #c5222a"> </span> </a> </li>
+								<li> <a href="#" target=" class = "icon-youtube"> <span class = "fa fa-youtube" style = "font-size: 36px; color: #c5222a"> </span> </a> </li>
+							</ul>
+						</div>
+					</div>
+                        	</div>
+			</div>
+                </div>
+	</body>
+</html>

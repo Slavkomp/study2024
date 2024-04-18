@@ -1,0 +1,257 @@
+body, html {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	margin: auto;
+}
+
+.grMain {
+	margin: auto;
+	width: 1290px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas:
+	"header	header	header	header	header"
+	"menu	base	base	base	base"
+	"tbase	tbase	tbase	tbase	tbase"
+	"footer	footer	footer	footer	footer";
+}
+
+.Header {
+	grid-area: header;
+}
+
+.flHeaderContent {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	background-color: whitesmoke;
+	align-items: center;
+}
+
+.flHeaderContentShop, .flHeaderContentInfo {
+	display: flex;
+	gap: 35px;
+}
+
+ul {
+	list-style: none; 
+	margin: 0;
+	padding: 0;
+}
+
+NavMenuStyle {
+	text-decoration: none;
+}
+
+a {
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	outline: none;
+	transition: .5s linear;
+}
+
+.UlNavMenu > li {
+	display: inline-block;
+	position: relative;
+}
+
+.UlNavSubmenu {
+	position: absolute;
+	top: 100%;
+	padding: 1rem 0;
+	right: 0;
+	z-index: 10;
+	-webkit-transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-o-transition: 0.5s ease-in-out;
+	transition: 0.5s ease-in-out;
+	min-width: 220px;
+}
+
+.NavMenu .UlNavSubmenu {
+	-webkit-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 0 0;
+	-ms-transform-origin: 0 0;
+	transform-origin: 0 0;
+	background: white;
+}
+
+.NavMenu ul li:hover .UlNavSubmenu {
+	-webkit-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+}
+
+.flHeaderContentInfo .UlNavSubmenu {
+	min-width: 176px;
+}
+
+#subua {
+	min-width: 60px;
+}
+
+.flHeaderInfoSearch, .flHeaderCategory, .flBaseHead, .flBaseFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+
+.flHeaderInfoSearch .UlNavSubmenu {
+	min-width: 100px
+}
+
+.ContentSearch {
+	width: 40%;
+	position: relative;
+	display: flex;
+	padding: 10px;
+	margin-left: 10px;
+}
+
+.searchTerm {
+	width: 100%;
+	border: none;
+	background-color: whitesmoke;
+	padding: 5px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+.searchTerm:focus{
+	color: #380136;
+}
+
+.searchButton {
+	width: 40px;
+	height: 47px;
+	border: 1px solid #c5222a;
+	background: #c5222a;
+	text-align: center;
+	color: #eeeeee;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.flHeaderInfo {
+    display: flex;
+    justify-content: center
+}
+
+.flHeaderCategoryMenu {
+    display: flex;
+}
+
+.flHeaderCategoryMenu a {
+    padding: 10px 3px
+}
+
+.Menu {
+	grid-area: menu;
+}
+
+.Base {
+	grid-area: base;
+	background-color: whitesmoke
+}
+
+.flBaseHead, flBaseFooter {
+	width: 100%;
+	height: 100px;
+	padding: 0 20px;
+	box-sizing: border-box;/* ### !!! ###
+	Незабути подивиться як робити поле вибору сортування
+	Довелось додати border-box щоб стало по краях*/
+}
+
+.flBaseHeadName, .flBaseHeadSort,
+.flBaseFooterPage, flBaseFooterNum,
+.flFooter, flFooterLink {
+    display: flex;
+}
+
+.flBaseHeadName {
+    font-weight: 700;
+    font-size: 2.5em
+}
+
+.grBaseProduct {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.flBaseProductName {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center
+}
+
+.pProduct {
+	width: 200px;
+	text-align: center;
+	font-weight: 600;
+	color: black
+}
+
+.TBase {
+	grid-area: tbase
+}
+
+.TBaseText {
+	padding: 50px 255px
+}
+
+.Footer {
+	grid-area: footer
+}
+
+.flFooter {
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: space-between
+}
+
+.FooterTitle {
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px
+}
+
+.flFooterLinkMail {
+	padding: 15px;
+	display: flex;
+}
+
+.InputFields {
+	width: -moz-available;
+	border: none;
+	background-color: whitesmoke;
+	padding: 5px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+}
+
+.InputButton {
+	width: 40px;
+	height: 47px;
+	border: 1px solid #c5222a;
+	background: #c5222a;
+	text-align: center;
+	color: #eeeeee;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.flFooterLinkSocial {
+	display: flex
+}
+
+.flFooterLinkSocial li {
+	display: inline-block;
+	position: relative;
+}
